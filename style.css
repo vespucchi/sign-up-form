@@ -1,3 +1,53 @@
 * {
     border: solid 1px red;
 }
+
+@font-face {
+    font-family: "Courier New";
+    src: url("/fonts/cour-webfont.woff2") format("woff2");
+    src: url("/fonts/cour-webfont.woff") format("woff");
+    font-display: swap;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, 
+        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side {
+    width: 35vw;
+    background-image: url('bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+img {
+    height: 150px;
+}
+
+.logo-name {
+    font-size: 62px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.right-side {
+    width: 65vw;
+}
