@@ -1,13 +1,5 @@
 * {
-    border: solid 1px red;
 }
-
-@font-face {
-    font-family: "Courier New";
-    src: url("/fonts/cour-webfont.woff2") format("woff2");
-    src: url("/fonts/cour-webfont.woff") format("woff");
-    font-display: swap;
-  }
 
 body {
     margin: 0;
@@ -50,4 +42,39 @@ img {
 
 .right-side {
     width: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    margin: 50px 0px;
+}
+
+.form {
+    display: flex;
+    gap: 70px;
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-name, .email, .password, .last-name, .phone-number, .confirm-pw {
+    display: flex;
+    flex-direction: column;
 }
