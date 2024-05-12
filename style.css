@@ -86,13 +86,46 @@ legend {
 }
 
 input {
-    border: 1px solid lightgrey;
     border-radius: 5px;
     font-size: 18px;
     height: 25px;
+    outline: none;
 }
 
 label {
     font-size: 12px;
 }
 
+input:valid {
+    border: 1px solid #8BC34A;
+    background-color: rgba(139, 195, 74, 0.25);
+}
+
+input:invalid {
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
+}
+
+input:placeholder-shown {
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+}
+
+input:focus:invalid {
+    background-color: transparent;
+    border: 1px solid #b92326;
+}
+
+input:focus:valid {
+    background-color: transparent;
+    border: 1px solid #8BC34A;
+}
+
+input:focus:placeholder-shown {
+    background-color: transparent;
+    border: 1px solid blue;
+}
+
+input:placeholder-shown + label {
+    display: none;
+}
