@@ -231,3 +231,23 @@ a, a:visited {
     color: rgb(164,0,251);
     font-weight: bold;
 }
+
+#confpassword {
+    margin-bottom: 10px;
+}
+
+#pw-match {
+    color: red;
+}
+
+#pw-match.invisible {
+    display: none;
+}
+
+#pw-match.visible {
+    display: block;
+}
+
+/* #confpassword:not(:placeholder-shown):invalid ~ #pw-match {
+    display: block;
+} */
