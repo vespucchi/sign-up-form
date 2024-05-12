@@ -1,4 +1,6 @@
 * {
+    /* border: 1px red solid; */
+    outline: none;
 }
 
 body {
@@ -7,6 +9,7 @@ body {
     font-family: system-ui, -apple-system, 
         BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
 }
 
 .container {
@@ -45,7 +48,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 
 .sign-up-form {
@@ -60,18 +63,21 @@ img {
 .form {
     display: flex;
     gap: 70px;
+    justify-content: center;
 }
 
 .left-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 40%;
 }
 
 .right-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 40%;
 }
 
 .first-name, .email, .password, .last-name, .phone-number, .confirm-pw {
@@ -88,12 +94,24 @@ legend {
 input {
     border-radius: 5px;
     font-size: 18px;
-    height: 25px;
+    height: 60px;
     outline: none;
+    padding: 24px 10px 12px;
+    width: 100%;
+    padding-left: 15px;
+    box-sizing: border-box;
 }
 
 label {
     font-size: 12px;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+div[class^="form-input-"] {
+    position: relative;
+    width: 100%;
 }
 
 input:valid {
@@ -128,4 +146,19 @@ input:focus:placeholder-shown {
 
 input:placeholder-shown + label {
     display: none;
+}
+
+#password:focus ~ .pw-req {
+    color: black;
+    user-select: all;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 25px;
+}
+
+.pw-req {
+    color: transparent;
+    user-select: none;
 }
