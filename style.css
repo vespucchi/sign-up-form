@@ -78,3 +78,21 @@ img {
     display: flex;
     flex-direction: column;
 }
+
+legend {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 550;
+}
+
+input {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 25px;
+}
+
+label {
+    font-size: 12px;
+}
+

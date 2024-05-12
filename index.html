@@ -17,7 +17,7 @@
         <div class="right-side">
             <div class="sign-up-form">
                 <div class="message">
-                    <h1 class="form-message">This is not a real online service! You know you need something
+                    <h2 class="form-message">This is not a real online service! You know you need something
                         like this in your life to help you realize your deepest dreams.
                         Sign up <em>now</em> to get started.
                         <br><br>
@@ -29,25 +29,31 @@
                     <form action="" class="form">
                         <div class="left-form">
                             <label for="first-name" class="first-name">FIRST NAME
-                                <input type="text" id="first-name" name="fname">
+                                <input type="text" id="first-name" name="fname" 
+                                    pattern="^[A-Za-z]+$" minlength="2" maxlength="50" required>
                             </label>
                             <label for="email" class="email">EMAIL
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" required>
                             </label>
                             <label for="password" class="password">PASSWORD
-                                <input type="password" id="password" name="pw">
+                                <input type="password" id="password" name="pw" 
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" 
+                                        minlength="8" required>
                             </label>
                         </div>
 
                         <div class="right-form">
                             <label for="last-name" class="last-name">LAST NAME
-                                <input type="text" id="last-name" name="lname">
+                                <input type="text" id="last-name" name="lname"
+                                    pattern="^[A-Za-z]+$" minlength="2" maxlength="50" required>
                             </label>
                             <label for="phone-number" class="phone-number">PHONE NUMBER
                                 <input type="tel" id="phone-number" name="pnum">
                             </label>
-                            <label for="confirm-pw" class="confirm-pw">LAST NAME
-                                <input type="password" id="confirm-pw" name="cpw">
+                            <label for="confirm-pw" class="confirm-pw">CONFIRM PASSWORD
+                                <input type="password" id="confirm-pw" name="cpw"
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" 
+                                        minlength="8" required>
                             </label>
                         </div>
                     </form>
