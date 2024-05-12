@@ -3,10 +3,17 @@
     outline: none;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/inter-variablefont_slntwght-webfont.woff2) format("woff2");
+    src: url(fonts/inter-variablefont_slntwght-webfont.woff) format("woff");
+    font-display: swap;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, 
+    font-family: 'Inter', system-ui, -apple-system, 
         BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
@@ -19,28 +26,56 @@ body {
 
 .left-side {
     width: 35vw;
-    background-image: url('bg.png');
+    background-image: url('bg.png'), url('bg-pattern.png');
+    background-size: cover;
+    background-blend-mode: multiply;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
 }
 
 .logo-area {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
 }
 
 img {
-    height: 150px;
+    height: 75px;
+    margin-right: 20px;
 }
 
 .logo-name {
-    font-size: 62px;
+    font-size: 2rem;
     color: white;
-    font-weight: 800;
+    font-weight: 100;
     text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.welcome-area {
+    align-self: center;
+    color: white;
+}
+
+#welcome-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+#sign-in-message {
+    font-size: 1rem;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    border-bottom: 2px white solid;
+}
+
+.welcome-link-area, #welcome-link {
+    color: white;
+    font-size: 1.2rem;
+    margin: 30px;
 }
 
 .right-side {
@@ -53,6 +88,7 @@ img {
 
 .form-message {
     font-size: 1.2rem;
+    font-weight: 200;
 }
 
 .sign-up-form {
