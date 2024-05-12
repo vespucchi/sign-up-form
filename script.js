@@ -16,6 +16,10 @@ cpw.addEventListener("input", () => {
 });
 
 pw.addEventListener("input", () => {
+    cpw.value = "";
+})
+
+pw.addEventListener("input", () => {
     // check for number
     if(pw.value.match(/(?=.*\d)/) !== null) {
         number.style.color = "green";
