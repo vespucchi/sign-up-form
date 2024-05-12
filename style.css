@@ -51,13 +51,17 @@ img {
     padding: 50px 50px;
 }
 
+.form-message {
+    font-size: 1.2rem;
+}
+
 .sign-up-form {
     display: flex;
     flex-direction: column;
 }
 
 .form-container {
-    margin: 50px 0px;
+    margin: 50px 0px 20px;
 }
 
 .form {
@@ -150,15 +154,44 @@ input:placeholder-shown + label {
 
 #password:focus ~ .pw-req {
     color: black;
-    user-select: all;
-    display: flex;
-    font-size: 0.9rem;
-    justify-content: space-between;
-    gap: 30px;
-    padding-left: 25px;
 }
 
 .pw-req {
     color: transparent;
     user-select: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    gap: 30px;
+    padding-left: 25px;
+}
+
+.submit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#submit {
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(164,0,251,1) 0%, rgba(255,96,243,1) 100%);
+    border-radius: 10px;
+}
+
+#submit:active {
+    box-shadow: inset 0px 0px 10px grey;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgb(164,0,251);
+    font-weight: bold;
 }
