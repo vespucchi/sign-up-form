@@ -31,9 +31,9 @@
                     <br><br>
                     You <em>know</em> you want to.
                 </h1>
-                <div class="form-container" autocomplete="off">
+                <div class="form-container">
                     <legend>Let's do this!</legend>
-                    <form action="" class="form">
+                    <form action="/index.html" method="post" id="form" autocomplete="off">
                         <div class="left-form">
                             <div class="form-input-name">
                                 <input type="text" id="firstname" name="fname" placeholder="Name *"
@@ -43,7 +43,7 @@
 
                             <div class="form-input-email">
                                 <input type="email" id="email" name="email" placeholder="Email *"
-                                        placeholder="john.diaz@gmail.com" autocomplete="on" tabindex="3" required>
+                                        placeholder="john.diaz@gmail.com" tabindex="3" required>
                                 <label for="email" class="email">EMAIL</label>
                             </div>
                             
@@ -75,7 +75,7 @@
 
                             <div class="form-input-pnum">
                                 <input type="tel" id="pnum" name="pnum" placeholder="Phone number"
-                                        placeholder="john.diaz@gmail.com" tabindex="4" required>
+                                        placeholder="john.diaz@gmail.com" tabindex="4">
                                 <label for="pnum" class="pnum">PHONE NUMBER</label>
                             </div>
                             
@@ -90,7 +90,7 @@
                     </form>
                 </div>
                 <div class="submit-form">
-                    <button id="submit">Create Account</button>
+                    <button id="submit" form="form">Create Account</button>
                     <span id="log-in">Already have an account? <a href="#" id="log-in">Log in</a></span>
                 </div>
             </div>

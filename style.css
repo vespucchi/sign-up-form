@@ -226,6 +226,10 @@ input:placeholder-shown + label {
     box-shadow: inset 0px 0px 10px grey;
 }
 
+#submit:active input:required {
+    border: 1px solid #b92326;
+}
+
 a, a:visited {
     text-decoration: none;
     color: rgb(164,0,251);
