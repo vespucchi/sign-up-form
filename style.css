@@ -100,7 +100,7 @@ img {
     margin: 50px 0px 20px;
 }
 
-.form {
+#form {
     display: flex;
     gap: 70px;
     justify-content: center;
@@ -189,7 +189,11 @@ input:placeholder-shown + label {
 }
 
 #password:focus ~ .pw-req {
-    color: black;
+    color: red;
+}
+
+#password:focus ~ .pw-req {
+    color: red;
 }
 
 .pw-req {
@@ -226,10 +230,6 @@ input:placeholder-shown + label {
     box-shadow: inset 0px 0px 10px grey;
 }
 
-#submit:active input:required {
-    border: 1px solid #b92326;
-}
-
 a, a:visited {
     text-decoration: none;
     color: rgb(164,0,251);
@@ -252,6 +252,3 @@ a, a:visited {
     display: block;
 }
 
-/* #confpassword:not(:placeholder-shown):invalid ~ #pw-match {
-    display: block;
-} */

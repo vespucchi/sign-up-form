@@ -33,7 +33,7 @@
                 </h1>
                 <div class="form-container">
                     <legend>Let's do this!</legend>
-                    <form action="/index.html" method="post" id="form" autocomplete="off">
+                    <form action="/index.html" method="post" id="form" autocomplete="off" onsubmit="reload()">
                         <div class="left-form">
                             <div class="form-input-name">
                                 <input type="text" id="firstname" name="fname" placeholder="Name *"
@@ -43,7 +43,7 @@
 
                             <div class="form-input-email">
                                 <input type="email" id="email" name="email" placeholder="Email *"
-                                        placeholder="john.diaz@gmail.com" tabindex="3" required>
+                                    tabindex="3" required>
                                 <label for="email" class="email">EMAIL</label>
                             </div>
                             
@@ -55,12 +55,12 @@
 
                                 <ul class="pw-req">
                                     <div class="li-left">
-                                        <li>Minimum eight characters</li>
-                                        <li>At least one uppercase letter</li>
+                                        <li id="pw-chars">Minimum eight characters</li>
+                                        <li id="pw-upper">At least one uppercase letter</li>
                                     </div>
                                     <div class="li-right">
-                                        <li>At least one lowercase letter</li>
-                                        <li>At least one number</li>
+                                        <li id="pw-lower">At least one lowercase letter</li>
+                                        <li id="pw-numb">At least one number</li>
                                     </div>
                                 </ul>
                             </div>
